@@ -1,0 +1,88 @@
+body {
+	box-sizing: border-box;
+	background-color: #F5DEB3;
+	margin: 0;
+}
+.top{
+	display: flex;
+	width: 98%;
+	margin: auto;
+}
+.img{
+	width: 10vw;
+}
+.text{
+	width:70%;
+	text-align: center;
+	font-size: 2.8vw;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	font-weight: bold;
+}
+.container {
+	width: 98vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row{
+	height: 5vw;
+	display: flex;
+}
+.cell{
+	width: 5.5%;
+	border-style: solid;
+	border-width: thin;
+	border-color: #F5DEB3;
+}
+.number{
+	text-align: left;
+	font-size: 0.85vw;
+}
+.name{
+	padding: 0.4vw 0;
+	text-align: center;
+	font-size: 1.65vw;
+	font-weight: bold;
+}
+.value{
+	font-size: 0.75vw;
+	text-align: right;
+}
+#green{
+	background-color: #00FF66;
+}
+#blue{
+	background-color: #3399CC;
+}
+#orange{
+	background-color: #FF9900;
+}
+#yellow{
+	background-color: #FFFF00;
+}
+#Halogens{
+	background-color: #00FFCC;
+}
+#metalloids{
+	background-color: #00CC66;
+}
+#post{
+	background-color: #99CCCC;
+}
+#transition
+{
+	background-color: #FF6633;
+}
+#lanthanoids{
+	background-color: #FF6666;
+}
+#actinoids
+{
+	background-color: #FF6699;
+}
+#nb{
+	position: relative;
+	top: 54%;
+}
