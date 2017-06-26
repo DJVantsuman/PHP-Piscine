@@ -1,0 +1,341 @@
+body {
+    background-color: #4f4d4d;
+}
+
+h1 {
+    font-size: 55px;
+    font-style: italic;
+    color: chocolate;
+}
+
+.container {
+    width: 1295px;
+    height: 1300px;
+    margin: auto;
+    padding-top: 15px;
+    background-color: #858585;
+}
+
+.h {
+    width: 1270px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+}
+
+.body {
+    display: flex;
+    width: 1270px;
+    height: 1015px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sort {
+    width: 250px;
+    height: 1000px;
+    margin-top: 15px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.content {
+    display: block;
+    overflow: auto;
+    width: 1005px;
+    height: 1000px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    /*outline: 2px black solid;*/
+}
+.content2 {
+    display: block;
+    overflow: auto;
+    width: 1270px;
+    height: 1000px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    /*outline: 2px black solid;*/
+}
+
+.footer {
+    width: 1270px;
+    height: 55px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+}
+
+.logo {
+    width: 250px;
+    height: 150px;
+    padding-top: 60px;
+    padding-left: 25px;
+}
+
+.name {
+    width: 700px;
+    height: 100%;
+    padding-left: 100px;
+}
+
+.blok_log {
+    width: 250px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.blok {
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.log_in {
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.login {
+    width: 100%;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.registration {
+    width: 100px;
+    height: 80px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.reg {
+    width: 100%;
+    height: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.reg a {
+    text-decoration: none;
+}
+
+.buskket_adm {
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.tovar_add{
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+}
+
+.tovar_add input{
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+}
+
+.tovar_string {
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    display: block;
+    margin: 0;
+    border-radius: 15px;
+    /*outline: 1px red solid;*/
+
+}
+
+.tovar {
+    /*width: 458px;*/
+    /*height: 458px;*/
+    padding-left: 15px;
+    /*padding-top: 1px;*/
+    width: auto;
+    height: auto;
+    /*display: block;*/
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 30px;
+    background-color: #cccaca;
+    border-radius: 15px;
+    /*border: 2px #646464 solid;*/
+    box-shadow: 10px 10px 20px gray;
+    /*outline: 1px red solid;*/
+}
+.tovar a {
+    /*text-shadow: 2px 2px 50px;*/
+    color: brown;
+    text-decoration: none;
+}
+
+.tovar_left_blok{
+    width: 16%;
+    height: 100%;
+    margin-left: 10px;
+    /*outline: 1px red solid;*/
+}
+
+.tovar_img{
+    width: 100px;
+    height: 100px;
+    /*outline: 1px red solid;*/
+}
+
+.tovar_img img{
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.tovar_cost{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    /*outline: 1px red solid;*/
+}
+
+.tovar_cost span{
+    font-size: large;
+    color: brown;
+}
+
+.tovar_right_block{
+    width: 80%;
+    height: 140px;
+    margin-left: 10px;
+    /*outline: 1px red solid;*/
+}
+
+.tovar_name{
+    margin-top: -12px;
+    width: 100%;
+    height: 30px;
+}
+
+.tovar_name p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+}
+
+.tovar_descr{
+    margin-top: -15px;
+    width: 100%;
+    height: 75px;
+    /*outline: 1px blue solid;*/
+}
+
+.tovar_button{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    /*outline: 1px darkblue solid;*/
+}
+
+.tovar_button a{
+    margin-left: 600px;
+}
+
+.tovar_button_del_edit{
+    width: 100px;
+    height: 100%;
+    margin-top: -10px;
+}
+
+.created_by {
+    width: 970px;
+    height: 100%;
+}
+
+.created_by p {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.tm {
+    width: 300px;
+    height: 100%;
+}
+
+/*next styles for registration page*/
+
+.back_page {
+    width: 200px;
+    height: 50px;
+}
+
+.back_page a {
+    text-decoration: none;
+    color: black;
+}
+
+.reg_form {
+    width: 300px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    /*outline: 1px red solid;*/
+}
+
+.reg_string {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.reg_string input {
+    width: 100%;
+    height: 60px;
+
+    font-size: large;
+    font-style: italic;
+}
+
+.reg_string button {
+    width: 100%;
+    height: 60px;
+    font-size: large;
+    margin-top: 20px;
+}
+
+.inp{
+    font-size: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.inp_but{
+    margin-left: 30px;
+    font-size: 15px;
+    width: 60px;
+    height: 40px;
+}
