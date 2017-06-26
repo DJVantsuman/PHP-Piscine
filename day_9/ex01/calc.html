@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator online</title>
+    <style>
+        body{
+            /*background-color: #909090;*/
+        }
+        .calculator{
+            width: 400px;
+            height: 95px;
+            border: solid;
+            border-radius: 10px;
+            border-color: #F5DEB3;
+            background-color: darkolivegreen;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 15px;
+        }
+        .calc_body{
+            width: 100%;
+            height: 65px;
+            display: flex;
+        }
+        .fild{
+            width: 147px;
+            height: 50px;
+            font-size: 20px;
+            text-align: right;
+        }
+
+        .character{
+            width: 60px;
+            height: 50px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .button_str{
+            width: 100%;
+            height: 30px;
+            display: flex;
+        }
+        .button{
+            width: 152px;
+            height: 100%;
+            font-size: 20px;
+        }
+        .img{
+            width: 551px;
+            height: 422px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" style="color: brown">Online calculator</h1>
+    <div class="calculator">
+        <form action="calc.html">
+            <div class="calc_body">
+                <input class="fild" type="text" id="n1" placeholder="number 1">
+                <input class="character" list="char" placeholder="opr." style="font-size: 20px" id="op">
+                <datalist id="char">
+                    <option value="+"> + </option>
+                    <option value="-"> - </option>
+                    <option value="*"> * </option>
+                    <option value="/"> / </option>
+                    <option value="%"> % </option>
+                </datalist>
+                <input class="fild" type="text" id="n2" placeholder="number 2">
+            </div>
+            <div class="button_str">
+                <button class="button" type="submit" name="submit" value="ok" onclick='return check("n1", "n2", "op")'>Try me!</button>
+                <button class="button" type="reset" name="submit" value="ok" style="margin-left: 100px">Clear</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function check(n1, n2, op) {
+            var num1 = document.getElementById(n1).value;
+            var num2 = document.getElementById(n2).value;
+            var opr = document.getElementById(op).value;
+
+            if (!isFinite(num1) || !isFinite(num2) || num1 % 1 != 0 || num2 % 1 != 0)
+                alert("Error :(");
+            else if (num1 < 0 || num2 < 0)
+                alert("Error :(");
+            else if (num2 == 0 && (opr == '/' || opr == '%'))
+                alert("It’s over 9000!");
+            else
+                culc(num1 * 1, num2 * 1, opr);
+        }
+        function culc(num1, num2, opr) {
+            if (opr == '+')
+                rez = num1 + num2;
+            else if (opr == '-')
+                rez = num1 - num2;
+            else if (opr == '*')
+                rez = num1 * num2;
+            else if (opr == '/')
+                rez = num1 / num2;
+            else if (opr == '%')
+                rez = num1 % num2;
+            console.log(rez);
+            alert(rez);
+        }
+    </script>
+    <script>
+        setInterval('alert("Please, use me...")', 30000);
+    </script>
+    <div class="img">
+        <img src="https://img.wikinut.com/img/2sqcbrkrk4kj4b0v/jpeg/0/Don-t-Panic%21.jpeg">
+    </div>
+</body>
+</html>

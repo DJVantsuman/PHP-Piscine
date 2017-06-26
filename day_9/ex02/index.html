@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: dimgrey;
+        }
+        #container{
+            width: 60vw;
+            min-height: 96vh;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #cccaca;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .to-do{
+            width: 96%;
+            height: 100px;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            background-color: floralwhite;
+            box-shadow: 10px 10px 50px;
+        }
+        .button{
+            width: 200px;
+            height: 60px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px black;
+        }
+        .button button{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <script src="todo.js">
+        </script>
+        <div class="button">
+            <button type="submit" id="button" onclick="new_div()">New</button>
+        </div>
+    </div>
+</body>
+</html>

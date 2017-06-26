@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #balloon{
+            margin: auto;
+            margin-top: 400px;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="balloon" onclick = zoomup() onmouseout=zoomdoun()>
+    </div>
+    <script>
+        var st = document.getElementById('balloon');
+        var collor = ["red", "green", "blue"];
+        var n = 200;
+        var i = 0;
+        var marg = 400;
+        function zoomup() {
+            if(n < 420)
+            {
+                n += 10;
+                marg -= 5;
+                if (i == 2)
+                    i = -1;
+                st.style.width = n + "px";
+                st.style.height = n + "px";
+                st.style.borderRadius = n + "px";
+                st.style.backgroundColor = collor[++i];
+                st.style.marginTop = marg + "px";
+            }
+            else
+            {
+                marg = 400;
+                st.style.width = 200 + "px";
+                st.style.height = 200 + "px";
+                st.style.borderRadius = 100 + "px";
+                st.style.backgroundColor = collor[0];
+                st.style.marginTop = marg + "px";
+                n = 200;
+                i = 0;
+            }
+        }
+        function zoomdoun() {
+            if(n > 200)
+            {
+                n -= 10;
+                marg += 5;
+                if (i == 0)
+                    i = 3;
+                st.style.width = n + "px";
+                st.style.height = n + "px";
+                st.style.borderRadius = n + "px";
+                st.style.backgroundColor = collor[--i];
+                st.style.marginTop = marg + "px";
+            }
+            else
+            {
+                marg = 400;
+                st.style.width = 200 + "px";
+                st.style.height = 200 + "px";
+                st.style.borderRadius = 100 + "px";
+                st.style.marginTop = marg + "px";
+                n = 200;
+
+            }
+        }
+    </script>
+</body>
+</html>

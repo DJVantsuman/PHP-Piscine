@@ -1,0 +1,4 @@
+<- Vector ----------------------------------------------------------------------
+There are mast be short description of my implementation this function. But i
+don't wont write it. In this reason you see this message.
+---------------------------------------------------------------------- Vector ->
